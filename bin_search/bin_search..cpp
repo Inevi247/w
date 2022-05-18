@@ -1,3 +1,4 @@
+// https://informatics.msk.ru/mod/statements/view.php?id=192&chapterid=111728#1
 #include <iostream>
 #include <fstream>
 #include <math.h>
@@ -51,7 +52,7 @@ int main() {
 		cin >> x;
 		int left = left_binary_search(v, x);
 		int right = right_binary_search(v, x);
-		if (left == n)
+		if (left == n || v[left] != x)
 			cout << 0 << endl;
 		else
 			cout << left + 1 << " " << right << endl;
